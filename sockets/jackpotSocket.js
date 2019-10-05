@@ -61,7 +61,7 @@ module.exports = async (socket) => {
                     }
 
                     const winnerOffset = Math.random() * (185 - 60) + 60;
-                    const winnerIndex = Math.floor(winnerOffset) - 1;
+                    const winnerIndex = Math.floor(winnerOffset);
                     newJackpot.winner = gameTable[winnerIndex].id;
                     const winner = await User.findById(newJackpot.winner);
                     winner.luckycoins += Number(newJackpot.cash);
