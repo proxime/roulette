@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://akira2005:akali102310@luckyspin-28wma.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "akali102310"
+}
