@@ -16,8 +16,8 @@ const JackpotDraw = ({ jackpot }) => {
 
     if (offset === 0) {
         if (jackpot.winnerOffset !== 0) {
-            setOffset(jackpot.winnerOffset * 200 - getCross());
-            console.log(jackpot.winnerOffset * 200 - getCross());
+            setOffset(jackpot.winnerOffset * 200 - getCross() - 100);
+            console.log(jackpot.winnerOffset * 200 - getCross() - 100);
         }
     }
 
