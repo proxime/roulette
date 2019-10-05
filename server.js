@@ -29,6 +29,6 @@ if (process.env.NODE_ENV === 'production') {
 const jackpotSocket = require('./sockets/jackpotSocket');
 io.on('connection', jackpotSocket);
 
-const PORT = process.env.PORT || 3231;
+const PORT = process.env.PORT || 5000;
 
 http.listen(PORT, () => console.log(`Server started on port ${PORT}`));

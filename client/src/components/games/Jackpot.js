@@ -50,7 +50,7 @@ const Jackpot = ({ auth, history, jackpotMessages, setJackpotMessages, setUpBet,
     });
 
     useEffect(() => {
-        const socket = io.connect('http://localhost:3231');
+        const socket = io.connect('/');
         updateJackpotGames();
         socket.on('chat output', (res) => {
             setJackpotMessages(res);
