@@ -12,8 +12,7 @@ const JackpotSchema = new mongoose.Schema({
         default: true,
     },
     winner: {
-        type: mongoose.Types.ObjectId,
-        ref: 'user'
+        type: String,
     },
     players: [
         {

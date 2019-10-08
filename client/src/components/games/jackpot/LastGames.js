@@ -5,7 +5,7 @@ const LastGames = ({ jackpot }) => {
         <div className="jackpot__winners-item" key={item._id}>
             <div className="jackpot__players-image"></div>
             <div className="jackpot__players-body">
-                <div className="jackpot__players-nick">{item.winner.nick}</div>
+                <div className="jackpot__players-nick">{item.winner}</div>
                 <div className="jackpot__players-cash">Wygrana: {item.cash} <i className="fas fa-coins"></i></div>
             </div>
         </div>

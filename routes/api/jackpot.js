@@ -11,8 +11,7 @@ const Jackpot = require('../../models/Jackpot');
 // @access  Public
 router.get('/', async (req, res) => {
     try {
-        const lastGames = await Jackpot.find({ current: false }).sort({ _id: -1 }).limit(5)
-            .populate({ path: 'winner', select: 'nick' });
+        const lastGames = await Jackpot.find({ current: false }).sort({ _id: -1 }).limit(5);
 
         res.json(lastGames);
     } catch (err) {

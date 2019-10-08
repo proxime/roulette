@@ -41,7 +41,6 @@ export const updateJackpot = res => dispatch => {
 }
 
 export const endGame = res => dispatch => {
-    console.log(res);
     dispatch({
         type: END_JACKPOT,
         payload: res,
