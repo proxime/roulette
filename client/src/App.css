@@ -16,7 +16,7 @@ a {
 
 html {
   font-size: 10px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #333;
 }
 
@@ -51,7 +51,7 @@ html {
 }
 
 .menu__logo {
-  font-family: "Black Ops One", cursive;
+  font-family: 'Black Ops One', cursive;
   font-size: 6rem;
   letter-spacing: -5px;
   text-transform: uppercase;
@@ -106,7 +106,7 @@ html {
 .menu__list-item {
   font-size: 2rem;
   margin-right: 10px;
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   -webkit-transition: text-shadow 0.2s, -webkit-transform 0.2s;
   transition: text-shadow 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, text-shadow 0.2s;
@@ -257,7 +257,7 @@ html {
 }
 
 .menu__nick {
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   font-size: 1.5rem;
   margin-right: 5px;
 }
@@ -273,6 +273,8 @@ html {
   height: 45px;
   background-color: #fff;
   border-radius: 50%;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 860px) {
@@ -312,6 +314,14 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   background-position: center top;
+  background-size: cover;
+}
+
+.leftbar__avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center;
   background-size: cover;
 }
 
@@ -370,7 +380,7 @@ html {
   width: 100%;
   height: 100%;
   font-size: 2.3rem;
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   padding: 5px 0;
 }
 
@@ -477,7 +487,7 @@ html {
 }
 
 .leftbar__nick {
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   font-size: 2rem;
   margin-right: 5px;
 }
@@ -544,13 +554,13 @@ html {
       color-stop(0, rgba(0, 0, 0, 0.8)),
       to(rgba(167, 21, 21, 0.25))
     ),
-    url("./img/index-bg.jpg");
+    url('./img/index-bg.jpg');
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.8) 0,
       rgba(167, 21, 21, 0.25) 100%
     ),
-    url("./img/index-bg.jpg");
+    url('./img/index-bg.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -578,7 +588,7 @@ html {
 }
 
 .home__logo {
-  font-family: "Black Ops One", cursive;
+  font-family: 'Black Ops One', cursive;
   font-size: 10rem;
   letter-spacing: -5px;
   text-transform: uppercase;
@@ -683,7 +693,7 @@ html {
 .about__title {
   position: relative;
   font-size: 5rem;
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   text-transform: uppercase;
   color: #ffc107;
   text-align: center;
@@ -704,7 +714,7 @@ html {
 }
 
 .about__title::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 110%;
   left: 35%;
@@ -778,7 +788,7 @@ html {
 
 .about__head {
   font-size: 4rem;
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
 }
 
 .about__head a {
@@ -836,7 +846,7 @@ html {
 }
 
 .footer__title {
-  font-family: "Black Ops One", cursive;
+  font-family: 'Black Ops One', cursive;
   font-size: 6rem;
   letter-spacing: -5px;
   text-transform: uppercase;
@@ -953,8 +963,9 @@ html {
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 10px #333, 0 0 0 13px white;
   box-shadow: 0 0 0 10px #333, 0 0 0 13px white;
-  cursor: pointer;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
 
 .dashboard__avatar:hover .dashboard__change-avatar {
@@ -962,7 +973,7 @@ html {
 }
 
 .dashboard__nick {
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   font-size: 4rem;
   margin-top: 15px;
   margin-bottom: 25px;
@@ -988,7 +999,7 @@ html {
   display: none;
 }
 
-.dashboard__change-avatar a {
+.dashboard__change-avatar span {
   position: absolute;
   top: 50%;
   width: -webkit-fit-content;
@@ -999,6 +1010,8 @@ html {
   transform: translate(-50%, -50%);
   background-color: #0277bd;
   padding: 10px 30px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .dashboard__change-avatar a:hover {
@@ -1400,13 +1413,13 @@ html {
   display: none;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
   /* Firefox */
 }
@@ -1550,7 +1563,7 @@ input[type="number"] {
 .loading__title {
   color: white;
   font-size: 6rem;
-  font-family: "Black Ops One", cursive;
+  font-family: 'Black Ops One', cursive;
   font-weight: normal;
   text-shadow: 0 0 10px #ffc107;
 }
@@ -1745,6 +1758,9 @@ input[type="number"] {
 }
 
 .chat {
+  position: fixed;
+  top: 85px;
+  left: 0;
   width: 320px;
   height: calc(100vh - 85px);
   background-color: #555;
@@ -1765,12 +1781,6 @@ input[type="number"] {
   }
 }
 
-@media (max-height: 550px) {
-  .chat {
-    height: 450px;
-  }
-}
-
 .chat__title {
   padding: 20px;
   font-size: 2rem;
@@ -1783,7 +1793,6 @@ input[type="number"] {
 }
 
 .chat__body {
-  min-height: 200px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -1899,6 +1908,13 @@ input[type="number"] {
     #141414 100%
   );
   padding: 20px;
+  margin-left: 320px;
+}
+
+@media (max-width: 1300px) {
+  .jackpot {
+    margin-left: 0;
+  }
 }
 
 .jackpot__draw {
@@ -1948,11 +1964,13 @@ input[type="number"] {
   background-color: #fff;
   margin: 0 auto;
   margin-bottom: 5px;
+  background-position: center;
+  background-size: cover;
 }
 
 .jackpot__draw-nick {
   color: white;
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   text-align: center;
   font-size: 1.7rem;
 }
@@ -2065,11 +2083,13 @@ input[type="number"] {
   background-color: #fff;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .jackpot__players-nick {
   font-size: 2rem;
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   margin-bottom: 5px;
 }
 
@@ -2166,5 +2186,101 @@ input[type="number"] {
 
 .jackpot__add-bet-button:hover {
   background-color: #1d1d1d;
+}
+
+.change-avatar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: red;
+  width: 500px;
+  background-color: #333;
+  padding: 30px 40px;
+}
+
+.change-avatar__title {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.change-avatar__popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.change-avatar__form input {
+  display: none;
+}
+
+.change-avatar__input {
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffc107;
+  padding: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  user-select: none;
+  border-radius: 15px;
+}
+
+.change-avatar__avatar {
+  width: 40%;
+  padding-top: 40%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background-position: center;
+  background-size: cover;
+}
+
+.change-avatar__buttons {
+  display: flex;
+}
+
+.change-avatar__btn {
+  display: block;
+  padding: 7px 20px;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #e65100;
+  margin-right: 20px;
+  outline: none;
+  user-select: none;
+  color: white;
+}
+
+.change-avatar__btn.dark {
+  background-color: #444343;
+}
+
+@media (max-width: 500px) {
+  .change-avatar {
+    width: 320px;
+    padding: 30px;
+  }
+  .change-avatar__title {
+    font-size: 3.5rem;
+  }
+  .change-avatar__avatar {
+    width: 60%;
+    padding-top: 60%;
+  }
+  .change-avatar__buttons {
+    justify-content: space-around;
+  }
+  .change-avatar__btn {
+    width: 48%;
+    margin: 0;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
